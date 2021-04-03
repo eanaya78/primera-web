@@ -1,0 +1,16 @@
+h1{
+    font-weight: bolder;
+    padding: 10px;
+}
+
+/* .Nombre_clase */
+.Azul{
+    background-color: blue;
+    color: white;
+}
+
+/* ·nombre_id */
+#footer1{
+    padding: 20px;
+    background-color: purple;
+}
