@@ -1,88 +1,115 @@
+/* variables */
 :root{
-   --color-primario: #FB8F1D;
+  --color-primario:#FB8F1D;
 }
 
 /* reset */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: 1px solid lightgray;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  border:1px solid lightgray;
 }
-
 /* agregando fuente local */
 @font-face {
-    font-family: 'Inter';
-    /* La ubicacion */
-    /* ../subo un nivel en el directorio de carpetas */
-    src: url('../assets/fonts/Inter-Regular.woff');
+  /* nombre, como lo vamos a usar */
+  font-family: 'Inter';
+  /* la ubicación */
+  /* ../ subo un nivel en el directorio de carpetas */
+  src: url('../assets/fonts/Inter-Regular.woff');
 }
 
-/* quitamos estilos de a  */
+/* quitemos estilos de a */
 a{
-    color: black;
-    text-decoration: none;
+  color:black;
+  text-decoration: none;
 }
 
-/* removiendo estilos lista */
+/* remover estilos lista */
 ul{
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .container{
-    max-width: 1000px;
-    padding: 20px;
-    margin: 0 auto;
+  max-width:1000px;
+  padding:20px;
+  margin:0 auto;
+  /* esto aplica para margin y padding */
+  /* marginx2: arribaabajo derechaizquierda */
+  /* marginx4: arriba derecha abajo izquierda */
 }
 
+/* estilos navegación */
+
 nav{
-    display:flex;
-    justify-content:space-between;
-    padding:10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size:14px;
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+  font-family: 'Open Sans',Arial, sans-serif;
+  font-size:14px;
 }
 
 nav > ul{
-    display: flex;
-    align-items: center;
+  display:flex;
+  align-items:center;
 }
 
 nav > ul > li{
-    margin: 0 5px;
+  margin:0 5px;
 }
 
 #btn-register{
-    /* var (--nombreVariable) */
-    background-color: var(--color-primario);
-    color: white;
-    padding:10px 20px;
-    border-radius: 8px;
+  /* var(--nombrevariable) */
+  background-color:var(--color-primario);
+  color:white;
+  padding:10px 20px;
+  border-radius:8px;
 }
 
 #btn-login{
-    background-color: white;
-    border: 1px solid var(--color-primario);
-    padding: 10px 20px;
-    border-radius: 8px;
+  background-color: white;
+  border:1px solid var(--color-primario);
+  padding:10px 20px;
+  border-radius:8px;
 }
 
+/* estilos header */
+
 header{
-    display: flex;
+  display:flex;
 }
 
 .header-content{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 30px;
+  width:45%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding:30px;
 }
 
 .header-content > h1{
-    font-family: 'Inter';
+  font-family: 'Inter';
+}
+
+.header-content > small {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header-content > input{
+  padding:12px;
+  border-radius:6px;
+}
+
+.header-content > button{
+  background-color: var(--color-primario);
+  padding:12px;
+  color:white;
+  width:150px;
+  border-radius:10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header > img{
-    width: 55%;
+  width:55%;
 }
+
